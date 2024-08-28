@@ -13,8 +13,8 @@ checkkey.Parent = gui:WaitForChild("Frame")
 getkey.Parent = frame
 input.Parent = frame
 
-frame.Size = UDim2.new(0, 320,0, 311)
-frame.Position = UDim2.new(-0.016, 356,0.042, 111)
+frame.Size = UDim2.new(0, 320,0, 142)
+frame.Position = UDim2.new(-0.016, 356,0.278, 111)
 frame.BackgroundColor3 = Color3.fromRGB(10, 21, 31)
 
 checkkey.TextColor3 = Color3.new(1, 1, 1)
@@ -100,4 +100,5 @@ print("Simple Executor Loaded : SIMPLE EXECUTOR")
 game.StarterGui:SetCore("SendNotification",{
 	Title = "Simple Executor Key System Loaded";
 	Text = "Loaded Succes";
+})
 })
