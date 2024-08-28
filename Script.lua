@@ -42,7 +42,7 @@ input.Text = ""
 checkkey.MouseButton1Down:Connect(function() 
 	if input.Text == "mdyla13k8an3a02" then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/nickils/executor/main/script.lua"))()
-	wait(0.1)
+	wait(0)
 	gui:Destroy()
 	end
 end)
