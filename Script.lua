@@ -13,6 +13,7 @@ frame.Parent = gui
 checkkey.Parent = frame
 getkey.Parent = frame
 input.Parent = frame
+close.Parent = frame
 
 frame.Size = UDim2.new(0, 320,0, 142)
 frame.Position = UDim2.new(-0.016, 356,0.278, 111)
