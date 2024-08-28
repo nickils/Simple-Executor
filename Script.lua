@@ -4,7 +4,7 @@ local getkey = Instance.new("TextButton")
 local checkkey = Instance.new("TextButton")
 local input = Instance.new("TextBox")
 
-gui.Name = "executor"
+gui.Name = "getkey"
 gui.Parent = game.CoreGui
 gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -42,6 +42,8 @@ input.Text = ""
 checkkey.MouseButton1Down:Connect(function() 
 	if input.Text == "mdyla13k8an3a02" then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/nickils/executor/main/script.lua"))()
+	wait(0.1)
+	gui:Destroy()
 	end
 end)
 
