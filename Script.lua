@@ -2,6 +2,7 @@ local gui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local getkey = Instance.new("TextButton")
 local checkkey = Instance.new("TextButton")
+local close = Instance.new("TextButton")
 local input = Instance.new("TextBox")
 
 gui.Name = "getkey"
@@ -29,6 +30,12 @@ getkey.Position = UDim2.new(0, 0,0.825, 0)
 getkey.BackgroundColor3 = Color3.fromRGB(41, 43, 44)
 getkey.Text = "Get Key"
 
+close.TextColor3 = Color3.new(1, 1, 1)
+close.Size = UDim2.new(0, 53,0, 20)
+close.Position = UDim2.new(0.834, 0,-0.006, 0)
+close.BackgroundColor3 = Color3.fromRGB(41, 43, 44)
+close.Text = "Close"
+
 input.TextColor3 = Color3.new(1, 1, 1)
 input.Size = UDim2.new(0, 320,0, 97)
 input.Position = UDim2.new(0, 0,0.139, 0)
@@ -42,11 +49,13 @@ input.Text = ""
 checkkey.MouseButton1Down:Connect(function() 
 	if input.Text == "mdyla13k8an3a02" then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/nickils/executor/main/script.lua"))()
-	wait(0)
+	wait(0.1)
 	gui:Destroy()
 	end
 end)
-
+close.MouseButton1Down:Connect(function() 
+		gui:Destroy()
+end)
 getkey.MouseButton1Down:Connect(function() 
 	input.Text = "Key Link: https://linkvertise.com/1225042/sekey?o=sharing"
 end)
