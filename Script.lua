@@ -25,7 +25,7 @@ checkkey.Text = "Check Key"
 
 getkey.TextColor3 = Color3.new(1, 1, 1)
 getkey.Size = UDim2.new(0, 160,0, 24)
-getkey.Position = UDim2.new(0.5, 0,0.825, 0)
+getkey.Position = UDim2.new(0, 0,0.825, 0)
 getkey.BackgroundColor3 = Color3.fromRGB(41, 43, 44)
 getkey.Text = "Get Key"
 
@@ -34,11 +34,9 @@ input.Size = UDim2.new(0, 320,0, 97)
 input.Position = UDim2.new(0, 0,0.139, 0)
 input.BackgroundColor3 = Color3.fromRGB(57, 59, 61)
 input.TextWrapped = true
-input.PlaceholderText = "Type Script Here"
+input.PlaceholderText = "Type Key Here"
 input.MultiLine = true
 input.ClearTextOnFocus = false
-input.TextXAlignment = "Left"
-input.TextYAlignment = "Top"
 input.Text = ""
 
 checkkey.MouseButton1Down:Connect(function() 
