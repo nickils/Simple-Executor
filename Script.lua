@@ -9,7 +9,7 @@ gui.Parent = game.CoreGui
 gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 frame.Parent = gui
-checkkey.Parent = gui:WaitForChild("Frame")
+checkkey.Parent = frame
 getkey.Parent = frame
 input.Parent = frame
 
@@ -100,5 +100,4 @@ print("Simple Executor Loaded : SIMPLE EXECUTOR")
 game.StarterGui:SetCore("SendNotification",{
 	Title = "Simple Executor Key System Loaded";
 	Text = "Loaded Succes";
-})
 })
